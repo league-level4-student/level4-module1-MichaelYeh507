@@ -3,7 +3,7 @@ package _01_Custom_ArrayList;
 import static org.junit.Assert.*;
 import org.junit.jupiter.api.Test;
 
-//Complete the ArrayList class using the generic to make the tests pass.
+//Complete the ArrayList class using the template to make the tests pass.
 
 public class CustomArrayListTest {
 
@@ -51,7 +51,7 @@ public class CustomArrayListTest {
 		if(list.get(3) != 'G') fail("list.get(3) returning improper value.");
 		if(list.get(4) != 'O') fail("list.get(4) returning improper value.");
 	}
-	
+
 	@Test
 	public void testRemove() {
 		class Student { 
@@ -86,22 +86,7 @@ public class CustomArrayListTest {
 			fail("list.get(1) returning improper value.");
 		}
 	}
-	
-	@Test
-	public void testContains() {
-		ArrayList<String> list = new ArrayList<String>();
-		list.add("This");
-		list.add("is");
-		list.add("only");
-		list.add("a");
-		list.add("test");
-		
-		assertTrue(list.contains("This"));
-		assertTrue(list.contains("is"));
-		assertTrue(list.contains("only"));
-		assertFalse(list.contains("the"));
-		assertFalse(list.contains("best"));
-	}
+
 	
 	@Test
 	public void testSize() {
